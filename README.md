@@ -24,6 +24,8 @@ table fills in after the workflow's first check.
 Every 5 minutes (when GitHub runs the schedule late, a run checks up to 4 times, 5 minutes apart, to fill the gap), GitHup checks each monitor in [`.githup.yml`](.githup.yml):
 
 - **Stux.Cloud:** [stux.cloud](https://stux.cloud) and the Stux.Cloud media CDN
+- **Regions:** each region's website on its own server (United Kingdom, Spain, Finland, France,
+  United States, Canada). Regions with no server yet are served by the main site
 - **Pages:** the Stux.Cloud Region Page, Instance Page, Coming Soon Page, Maintenance Page and
   GitHub Pages Redirect
 - **Archived pages:** the earlier designs kept online as snapshots (the v1 and v2 pages)

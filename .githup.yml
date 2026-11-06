@@ -46,6 +46,30 @@ groups:
         url: https://global.media.stux.cloud/icon.png
         description: Shared logos and images used across every Stux.Cloud site
 
+  # Each region's website, on that region's server. Regions with no server yet (au, eu, in, jp, sg)
+  # are served by the main site, so they aren't checked separately.
+  - name: Regions
+    description: Each Stux.Cloud region's website.
+    monitors:
+      - name: Stux.Cloud United Kingdom Region
+        url: https://uk.stux.cloud/
+        description: uk.stux.cloud
+      - name: Stux.Cloud Spain Region
+        url: https://es.stux.cloud/
+        description: es.stux.cloud
+      - name: Stux.Cloud Finland Region
+        url: https://fi.stux.cloud/
+        description: fi.stux.cloud
+      - name: Stux.Cloud France Region
+        url: https://fr.stux.cloud/
+        description: fr.stux.cloud
+      - name: Stux.Cloud United States Region
+        url: https://us.stux.cloud/
+        description: us.stux.cloud
+      - name: Stux.Cloud Canada Region
+        url: https://ca.stux.cloud/
+        description: ca.stux.cloud
+
   - name: Pages
     description: The pages Stux.Cloud's regions and servers show.
     monitors:
