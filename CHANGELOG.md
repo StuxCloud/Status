@@ -7,6 +7,16 @@ a fixed order: Added, Changed, Fixed, Removed, Security, Deprecated. This projec
 
 ## v26.11.06-3
 
+### Added
+
+- Monitors for the eight region websites with no server yet, which are live placeholder sites that frame the region page: Stux.Cloud EMEA, Europe, AMER, APAC, Australia, Japan, Singapore and India Region. Every live Stux.Cloud site is now checked
+- A `test` branch. Work happens there, and changes reach `main` only through a pull request from `test` that needs CI to pass and is reviewed and merged by Leo. Release commits and tags are made on `test`
+- `.github/workflows/ci.yml`, which checks `VERSION.md` and the changelog, and that `.githup.yml` loads in GitHup, on every push to `main` and `test` and on every pull request
+
+### Changed
+
+- The README's Versioning section and a new **Branches** section in `CONTRIBUTING.md` describe the `test` branch, and `commit.sh`/`commit.bat` suggest pushing to `test`
+
 ### Fixed
 
 - The Stux.Cloud GitHub Pages Redirect monitor's description says where it really sends visitors, github.com/StuxCloud (it said stux.cloud)

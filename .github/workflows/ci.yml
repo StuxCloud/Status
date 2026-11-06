@@ -1,0 +1,26 @@
+# Checks every push to main and test, and every pull request.
+name: CI
+
+on:
+  push:
+    branches: [main, test]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check VERSION.md and CHANGELOG.md
+        run: bash tests/version.sh
+      - name: Check out GitHup
+        uses: actions/checkout@v4
+        with:
+          repository: StuxGroup/GitHup
+          ref: v1
+          path: .githup-src
+      - name: Check .githup.yml loads in GitHup
+        run: PYTHONPATH=.githup-src python3 -c "from githup import config; c = config.load(\".githup.yml\"); print(len(c.monitors), \"monitors\")"
