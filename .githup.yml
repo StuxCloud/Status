@@ -1,0 +1,122 @@
+# Stux.Cloud Status: https://status.stux.cloud
+# Checked every 5 minutes by .github/workflows/status.yml, using GitHup:
+# https://github.com/StuxGroup/GitHup
+# Only Stux.Cloud's public websites and pages. The servers themselves are on Stuxedo Status.
+site:
+  name: Stux.Cloud Status
+  description: Live status of Stux.Cloud's websites and pages, checked every 5 minutes.
+  # Its own badge icon (the Stux.Cloud mark with a heartbeat badge), built by scripts/badge-icons.py into icons/,
+  # which GitHup publishes at the site root.
+  logo: https://status.stux.cloud/icon-512.png
+  favicon: https://status.stux.cloud/icon-512.png
+  icons: icons
+  # Stux.Cloud's teal.
+  accent: "#07878e"
+  url: https://status.stux.cloud/
+  footer_links:
+    - label: Stux.Cloud
+      url: https://stux.cloud/
+    - label: Server regions
+      url: https://regionpage.stux.cloud/
+    - label: Report a problem
+      url: https://github.com/StuxCloud/Status/issues/new
+
+legal:
+  operator: Stux.Cloud
+  company: "Stux.Cloud is operated by Stux Group Ltd, a company registered in England and Wales (company no. 13160574), registered office 82a James Carter Road, Mildenhall, England, IP28 7DE."
+  contact: legal@stux.cloud
+  host: GitHub Pages
+  effective: 6 November 2026
+
+defaults:
+  timeout: 15
+  retries: 2
+  max_response_time: 15000  # ms; GitHup's default. Slower (but otherwise good) answers show as degraded
+
+# Monitors are grouped into sections on the page, each with a combined status.
+# Slugs come from the names, so moving a monitor between groups keeps its history.
+groups:
+  - name: Stux.Cloud
+    description: The Stux.Cloud website and the media it relies on.
+    monitors:
+      - name: Stux.Cloud
+        url: https://stux.cloud/
+        description: The Stux.Cloud website
+      - name: Stux.Cloud Media CDN
+        url: https://global.media.stux.cloud/icon.png
+        description: Shared logos and images used across every Stux.Cloud site
+
+  # Each region's website, on that region's server. Regions with no server yet (au, eu, in, jp, sg)
+  # are served by the main site, so they aren't checked separately.
+  - name: Regions
+    description: Each Stux.Cloud region's website.
+    monitors:
+      - name: Stux.Cloud United Kingdom Region
+        url: https://uk.stux.cloud/
+        description: uk.stux.cloud
+      - name: Stux.Cloud Spain Region
+        url: https://es.stux.cloud/
+        description: es.stux.cloud
+      - name: Stux.Cloud Finland Region
+        url: https://fi.stux.cloud/
+        description: fi.stux.cloud
+      - name: Stux.Cloud France Region
+        url: https://fr.stux.cloud/
+        description: fr.stux.cloud
+      - name: Stux.Cloud United States Region
+        url: https://us.stux.cloud/
+        description: us.stux.cloud
+      - name: Stux.Cloud Canada Region
+        url: https://ca.stux.cloud/
+        description: ca.stux.cloud
+
+  - name: Pages
+    description: The pages Stux.Cloud's regions and servers show.
+    monitors:
+      - name: Stux.Cloud Region Page
+        url: https://regionpage.stux.cloud/
+        description: The server regions, with live status for each server
+      - name: Stux.Cloud Instance Page
+        url: https://instancepage.stux.cloud/
+        description: The landing page template for Stux.Cloud instances
+      - name: Stux.Cloud Coming Soon Page
+        url: https://soonpage.stux.cloud/
+        description: Shown on sites that aren't live yet
+      - name: Stux.Cloud Maintenance Page
+        url: https://maintenancepage.stux.cloud/
+        description: Shown while a site is being updated
+      - name: Stux.Cloud GitHub Pages Redirect
+        url: https://stuxcloud.github.io/
+        description: Sends stuxcloud.github.io to stux.cloud
+
+  - name: Archived pages
+    description: Earlier designs, kept online as snapshots.
+    monitors:
+      - name: Stux.Cloud Region Page v2
+        url: https://regionpage-v2.stux.cloud/
+        description: The green design, before the teal rebrand
+      - name: Stux.Cloud Instance Page v2
+        url: https://instancepage-v2.stux.cloud/
+        description: The green design, before the teal rebrand
+      - name: Stux.Cloud Instance Page v1
+        url: https://instancepage-v1.stux.cloud/
+        description: The first design
+      - name: Stux.Cloud Coming Soon Page v2
+        url: https://soonpage-v2.stux.cloud/
+        description: The green design, before the teal rebrand
+      - name: Stux.Cloud Maintenance Page v2
+        url: https://maintenancepage-v2.stux.cloud/
+        description: The green design, before the teal rebrand
+
+  - name: Elsewhere
+    description: Checked on their own status pages.
+    links:
+      - name: Stuxedo Status
+        url: https://status.stuxedo.net/
+        description: The servers behind every Stux.Cloud region
+      - name: Stux.Group Status
+        url: https://status.stux.group/
+        description: Stux.Group's websites and services
+
+incidents:
+  labels: [status]
