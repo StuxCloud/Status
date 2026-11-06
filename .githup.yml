@@ -1,7 +1,7 @@
 # Stux.Cloud Status: https://status.stux.cloud
 # Checked every 5 minutes by .github/workflows/status.yml, using GitHup:
 # https://github.com/StuxGroup/GitHup
-# Only Stux.Cloud's public websites and pages. The servers themselves are on Stuxedo Server Status.
+# Only Stux.Cloud's public websites and pages. The servers themselves are on Stuxedo's status (status.stuxedo.com).
 site:
   name: Stux.Cloud Status
   description: Live status of Stux.Cloud's websites and pages, checked every 5 minutes.
@@ -111,9 +111,9 @@ groups:
   - name: Elsewhere
     description: Checked on their own status pages.
     links:
-      - name: Stuxedo Server Status
-        url: https://status.stuxedo.net/
-        description: The servers behind every Stux.Cloud region
+      - name: Stuxedo Status
+        url: https://status.stuxedo.com/
+        description: Stuxedo's web hosting and the servers behind every Stux.Cloud region
       - name: Stux.Group Status
         url: https://status.stux.group/
         description: Stux.Group's websites and services

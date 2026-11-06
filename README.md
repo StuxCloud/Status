@@ -53,7 +53,7 @@ Every 5 minutes (when GitHub runs the schedule late, a run checks up to 4 times,
 - **Pages:** the Stux.Cloud Region Page, Instance Page, Coming Soon Page, Maintenance Page and
   GitHub Pages Redirect
 - **Archived pages:** the earlier designs kept online as snapshots (the v1 and v2 pages)
-- The servers behind each region are on [Stuxedo Server Status](https://status.stuxedo.net), linked
+- The servers behind each region are on [Stuxedo Status](https://status.stuxedo.com), linked
   under Elsewhere. Only public sites are listed here
 
 To add a monitor, add it to the right group there (or a new group). A group can also hold `links:` instead of monitors, for sites that should be listed but not checked.
