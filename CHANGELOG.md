@@ -5,6 +5,12 @@ a fixed order: Added, Changed, Fixed, Removed, Security, Deprecated. This projec
 [Date Versioning](https://datevers.ing) since v26.11.06, its first stable release (`YY.MM.DD`, the UTC release date, with
 `-1`, `-2`… for later releases the same day); v0.1.0 used [Semantic Versioning](https://semver.org).
 
+## v26.11.06-2
+
+### Changed
+
+- The Elsewhere link to Stuxedo is now **Stuxedo Status** at [status.stuxedo.com](https://status.stuxedo.com), Stuxedo's main status page, which leads to both Stuxedo Web Status and Stuxedo Server Status. It used to point straight at Stuxedo Server Status (status.stuxedo.net). The README and CONTRIBUTING point there too.
+
 ## v26.11.06-1
 
 ### Changed
