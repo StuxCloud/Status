@@ -1,9 +1,20 @@
 # Changelog
 
 All notable changes to Stux.Cloud Status are documented here. Each release's sections follow
-a fixed order: Added, Changed, Fixed, Removed, Security, Deprecated. This project is pre-stable and uses
-[Semantic Versioning](https://semver.org) `0.x.y`; its first stable release will be its first
-[Date Version](https://datevers.ing) (`YY.MM.DD`), with no 1.0.0.
+a fixed order: Added, Changed, Fixed, Removed, Security, Deprecated. This project uses
+[Date Versioning](https://datevers.ing) since v26.11.06, its first stable release (`YY.MM.DD`, the UTC release date, with
+`-1`, `-2`… for later releases the same day); v0.1.0 used [Semantic Versioning](https://semver.org).
+
+## v26.11.06
+
+The first stable release. Like every GitHup status page, Stux.Cloud Status is stable from the start, so it moves straight
+to Date Versioning; there is no 1.0.0.
+
+### Changed
+
+- Switched from Semantic Versioning to [Date Versioning](https://datevers.ing): releases are numbered by their UTC release date as `YY.MM.DD`, with `-1`, `-2`… for later releases the same day. This release follows v0.1.0
+- `commit.sh` and `commit.bat` (now the same as the other GitHup status pages') accept only a valid Date Version that isn't in the future (UTC), and warn when it's dated before today; `tests/version.sh` checks Date Versions only
+- `README.md` and `CONTRIBUTING.md` describe Date Versioning and the release steps
 
 ## v0.1.0
 
