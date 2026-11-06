@@ -87,7 +87,7 @@ groups:
         description: Shown while a site is being updated
       - name: Stux.Cloud GitHub Pages Redirect
         url: https://stuxcloud.github.io/
-        description: Sends stuxcloud.github.io to stux.cloud
+        description: Sends stuxcloud.github.io to github.com/StuxCloud
 
   - name: Archived pages
     description: Earlier designs, kept online as snapshots.
