@@ -5,6 +5,12 @@ a fixed order: Added, Changed, Fixed, Removed, Security, Deprecated. This projec
 [Date Versioning](https://datevers.ing) since v26.11.06, its first stable release (`YY.MM.DD`, the UTC release date, with
 `-1`, `-2`… for later releases the same day); v0.1.0 used [Semantic Versioning](https://semver.org).
 
+## v26.11.06-1
+
+### Changed
+
+- The Elsewhere link to status.stuxedo.net is now called **Stuxedo Server Status**, its new name (it was Stuxedo Status, a name that now belongs to Stuxedo's upcoming landing page at status.stuxedo.com). The README and CONTRIBUTING use the new name too.
+
 ## v26.11.06
 
 The first stable release. Like every GitHup status page, Stux.Cloud Status is stable from the start, so it moves straight

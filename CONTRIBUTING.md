@@ -20,7 +20,7 @@ You need Python 3.11+ and nothing else.
 
 - **Monitors live in `.githup.yml`.** Its syntax is documented in the
   [GitHup docs](https://githup.stux.group/docs/). Only add public sites Stux.Cloud runs, with
-  their full names ("Stux.Cloud Region Page", not "regionpage"). The servers belong on Stuxedo Status.
+  their full names ("Stux.Cloud Region Page", not "regionpage"). The servers belong on Stuxedo Server Status.
 - **The status page itself is GitHup's**, including the legal pages and 404. Change how it
   looks or works in GitHup, not here.
 - **Brand.** Stux.Cloud is teal (`#07878e`), and `site.accent` is the same.
