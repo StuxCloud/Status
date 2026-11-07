@@ -48,8 +48,9 @@ table fills in after the workflow's first check.
 Every 5 minutes (when GitHub runs the schedule late, a run checks up to 4 times, 5 minutes apart, to fill the gap), GitHup checks each monitor in [`.githup.yml`](.githup.yml):
 
 - **Stux.Cloud:** [stux.cloud](https://stux.cloud) and the Stux.Cloud media CDN
-- **Regions:** each region's website on its own server (United Kingdom, Spain, Finland, France,
-  United States, Canada). Regions with no server yet are served by the main site
+- **Regions:** every region's website: those on their own server (United Kingdom, Spain, Finland,
+  France, United States, Canada), and the placeholder sites for regions with no server yet (EMEA, Europe, AMER,
+  APAC, Australia, Japan, Singapore, India)
 - **Pages:** the Stux.Cloud Region Page, Instance Page, Coming Soon Page, Maintenance Page and
   GitHub Pages Redirect
 - **Archived pages:** the earlier designs kept online as snapshots (the v1 and v2 pages)
@@ -106,6 +107,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Versioning
 
 This project uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD` (for example `26.11.06`), with `-1`, `-2`… for later releases the same day. See [CHANGELOG.md](CHANGELOG.md) for what changed in each release.
+
+Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
 
 ## License
 

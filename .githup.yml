@@ -46,8 +46,9 @@ groups:
         url: https://global.media.stux.cloud/icon.png
         description: Shared logos and images used across every Stux.Cloud site
 
-  # Each region's website, on that region's server. Regions with no server yet (au, eu, in, jp, sg)
-  # are served by the main site, so they aren't checked separately.
+  # Each region's website. Regions with a server are served by that server; the rest (the EMEA, AMER and APAC
+  # areas, Europe, and the countries with no server yet) are placeholder sites on the main web hosting, which still
+  # frame the region page.
   - name: Regions
     description: Each Stux.Cloud region's website.
     monitors:
@@ -69,6 +70,30 @@ groups:
       - name: Stux.Cloud Canada Region
         url: https://ca.stux.cloud/
         description: ca.stux.cloud
+      - name: Stux.Cloud EMEA Region
+        url: https://emea.stux.cloud/
+        description: emea.stux.cloud (no server yet)
+      - name: Stux.Cloud Europe Region
+        url: https://eu.stux.cloud/
+        description: eu.stux.cloud (no server yet)
+      - name: Stux.Cloud AMER Region
+        url: https://amer.stux.cloud/
+        description: amer.stux.cloud (no server yet)
+      - name: Stux.Cloud APAC Region
+        url: https://apac.stux.cloud/
+        description: apac.stux.cloud (no server yet)
+      - name: Stux.Cloud Australia Region
+        url: https://au.stux.cloud/
+        description: au.stux.cloud (no server yet)
+      - name: Stux.Cloud Japan Region
+        url: https://jp.stux.cloud/
+        description: jp.stux.cloud (no server yet)
+      - name: Stux.Cloud Singapore Region
+        url: https://sg.stux.cloud/
+        description: sg.stux.cloud (no server yet)
+      - name: Stux.Cloud India Region
+        url: https://in.stux.cloud/
+        description: in.stux.cloud (no server yet)
 
   - name: Pages
     description: The pages Stux.Cloud's regions and servers show.
@@ -87,7 +112,7 @@ groups:
         description: Shown while a site is being updated
       - name: Stux.Cloud GitHub Pages Redirect
         url: https://stuxcloud.github.io/
-        description: Sends stuxcloud.github.io to stux.cloud
+        description: Sends stuxcloud.github.io to github.com/StuxCloud
 
   - name: Archived pages
     description: Earlier designs, kept online as snapshots.
