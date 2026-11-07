@@ -5,6 +5,12 @@ a fixed order: Added, Changed, Fixed, Removed, Security, Deprecated. This projec
 [Date Versioning](https://datevers.ing) since v26.11.06, its first stable release (`YY.MM.DD`, the UTC release date, with
 `-1`, `-2`… for later releases the same day); v0.1.0 used [Semantic Versioning](https://semver.org).
 
+## v26.11.07
+
+### Added
+
+- A note in `CONTRIBUTING.md` that the **Stux.Cloud** monitor's slug, `stux-cloud`, is an interface: the Stux.Cloud badge on [services.stux.group](https://services.stux.group) and the Stux.Group website read that monitor's status from `data/summary.json` by its slug, so renaming the monitor (which changes the slug) breaks them
+
 ## v26.11.06-3
 
 ### Added
