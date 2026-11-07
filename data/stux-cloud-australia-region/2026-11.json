@@ -1,4 +1,5 @@
 {"monitor":"stux-cloud-australia-region","month":"2026-11","fields":["t","status","code","ms"],"checks":[
 [1794063570,"up",200,474],
-[1794063871,"up",200,507]
+[1794063871,"up",200,507],
+[1794064170,"up",200,198]
 ]}
