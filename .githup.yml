@@ -1,10 +1,11 @@
 # Stux.Cloud Status: https://status.stux.cloud
-# Checked every 5 minutes by .github/workflows/status.yml, using GitHup:
+# Asks GitHub for a check every 5 minutes (best-effort; GitHub often runs it less often) - .github/workflows/status.yml
+# Built with GitHup:
 # https://github.com/StuxGroup/GitHup
 # Only Stux.Cloud's public websites and pages. The servers themselves are on Stuxedo's status (status.stuxedo.com).
 site:
   name: Stux.Cloud Status
-  description: Live status of Stux.Cloud's websites and pages, checked every 5 minutes.
+  description: Live status of Stux.Cloud's websites and pages, checked regularly.
   # Its own badge icon (the Stux.Cloud mark with a heartbeat badge), built by scripts/badge-icons.py into icons/,
   # which GitHup publishes at the site root.
   logo: https://status.stux.cloud/icon-512.png
