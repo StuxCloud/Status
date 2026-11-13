@@ -5,6 +5,18 @@ a fixed order: Added, Changed, Fixed, Removed, Security, Deprecated. This projec
 [Date Versioning](https://datevers.ing) since v26.11.06, its first stable release (`YY.MM.DD`, the UTC release date, with
 `-1`, `-2`… for later releases the same day); v0.1.0 used [Semantic Versioning](https://semver.org).
 
+## v26.11.13-1
+
+### Changed
+
+- The registered office on the Imprint now ends in "England, United Kingdom": **124 City Road, London, EC1V 2NX, England, United Kingdom**
+
+## v26.11.13
+
+### Changed
+
+- Stux Group Ltd's registered office is now **124 City Road, London, EC1V 2NX, England** on the Imprint page at `/legal/imprint` (from `legal.company` in `.githup.yml`), replacing the old Mildenhall address. The company number (13160574) and "registered in England and Wales" are unchanged
+
 ## v26.11.08
 
 ### Changed
