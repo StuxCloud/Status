@@ -13,7 +13,7 @@ status page software belong in [StuxGroup/GitHup](https://github.com/StuxGroup/G
 You need Python 3.11+ and nothing else.
 
 ```bash
-./dev-server.sh [--no-dev-mode] [port]   # or dev-server.bat on Windows
+./dev-server.sh [--no-dev-mode] [--lan] [port]   # or dev-server.bat on Windows; --lan for phones on your network
 ```
 
 ## Project conventions
