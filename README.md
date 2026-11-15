@@ -94,6 +94,7 @@ To announce planned maintenance, open an Issue yourself with the `githup` and `i
 ```bash
 ./dev-server.sh                 # or dev-server.bat on Windows; add a port as the last argument
 ./dev-server.sh --no-dev-mode   # production rendering
+./dev-server.sh --lan           # also open it from a phone or another device on your network
 ```
 
 `dev-server` generates 90 days of example data, builds the status page into `.dev/public` with
@@ -116,7 +117,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 This project uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD` (for example `26.11.06`), with `-1`, `-2`… for later releases the same day. See [CHANGELOG.md](CHANGELOG.md) for what changed in each release.
 
-Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
+Work happens on `test` (or a branch off it). Changes go `test` → `staging` → `main`, each step through a pull request; the release commit and tag are made on `test` and go live when the pull request from `staging` into `main` is merged. See [CONTRIBUTING.md](CONTRIBUTING.md#branches-and-going-live).
 
 ## License
 
